@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+/* universal selectors */
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* pseudo selectors */
+:root {
+  --Softorange: hsl(35, 77%, 62%);
+  --Softred: hsl(5, 85%, 63%);
+  --Offwhite: hsl(36, 100%, 99%);
+  --Grayishblue: hsl(233, 8%, 79%);
+  --Darkgrayishblue: hsl(236, 13%, 42%);
+  --Verydarkblue: hsl(240, 100%, 5%);
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 15px;
+  color: var(--Darkgrayishblue);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.links a {
+  margin: 0 10px;
+  color: var(--Darkgrayishblue);
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.picture-container {
+  width: 630px;
+}
+
+.picture-container img {
+  width: 100%;
+  height: auto;
+}
+
+.text-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.text-info h1 {
+  font-size: 40px;
+  font-weight: 800px;
+}
+
+.text-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.text-info div button {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  background-color: var(--Softred);
+  border: none;
+  color: var(--Offwhite);
+  text-transform: uppercase;
+}
+
+/* text content */
+.text-box {
+  width: 300px;
+  padding: 20px;
+  background-color: var(--Verydarkblue);
+}
+
+.text-box h1 {
+  color: var(--Softorange);
+  margin-bottom: 20px;
+}
+
+.text-box div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.text-box div h4 {
+  color: var(--Offwhite);
+}
+
+hr {
+  color: var(--Darkgrayishblue);
+  border: 0.2px solid;
+}
+
+.card-container {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.inner-card {
+  width: 300px;
+  display: flex;
+  gap: 10px;
+}
+
+.inner-card img {
+  height: 140px;
+}
+
+.inner-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inner-card div h1 {
+  color: var(--Grayishblue);
+}
